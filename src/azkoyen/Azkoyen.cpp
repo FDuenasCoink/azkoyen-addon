@@ -223,7 +223,7 @@ Napi::Value Azkoyen::OnCoin(const Napi::CallbackInfo &info)
 
   auto finishFn = [] (const Napi::CallbackInfo& info) {
     isRunningAzkoyen = false;
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(30));
     return;
   };
 
